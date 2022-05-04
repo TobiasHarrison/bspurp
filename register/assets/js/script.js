@@ -309,17 +309,13 @@ function loadItems() {
             }
 
             itemList.innerHTML += 
-            `<div class="col-md-3 col-sm-3 col-3 text-center">
+            `<div class="col-md-2 col-sm-2 col-1 text-center">
                 <figure class="card card-product" onclick="addItem('${menuItem.uid}','${menuItem.name}',${menuItem.price},'${menuItem.image}','${menuItem.items}')">
                     <div class="img-wrap">
                         <img draggable="false" src=${menuItem.image}>
                     </div>
                     <figcaption class="info-wrap">
-                        <span class="title h6">${menuItem.name}</span>
-                        <div class="action-wrap">
-                            <span class="btn btn-primary disabled btn-sm"> <i
-                                    class="fa fa-cart-plus"></i>$${menuItem.price} </span>
-                        </div> <!-- action-wrap -->
+                        <span class="title">${menuItem.name}</span>
                     </figcaption>
                 </figure> <!-- card // -->
             </div> <!-- col // -->`
