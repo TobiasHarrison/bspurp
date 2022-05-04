@@ -309,7 +309,7 @@ function loadItems() {
             }
 
             itemList.innerHTML += 
-            `<div class="col-md-2 col-sm-2 col-1 text-center">
+            `<div class="col-md-2 col-sm-2 col-1 text-center" style="mid-width:250px">
                 <figure class="card card-product" onclick="addItem('${menuItem.uid}','${menuItem.name}',${menuItem.price},'${menuItem.image}','${menuItem.items}')">
                     <div class="img-wrap">
                         <img draggable="false" src=${menuItem.image}>
